@@ -1,0 +1,13 @@
+.env
+*.env
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.rasa/
+models/
+*.tar
+*.tar.gz
+.DS_Store
+Thumbs.db

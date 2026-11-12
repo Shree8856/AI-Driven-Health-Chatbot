@@ -1,0 +1,17 @@
+version: "3.1"
+
+rules:
+- rule: Greet rule
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Goodbye rule
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Answer health questions
+  steps:
+    - intent: ask_health
+    - action: action_health_query

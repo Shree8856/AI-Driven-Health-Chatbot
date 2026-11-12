@@ -1,0 +1,7 @@
+Flask
+Flask_SQLAlchemy
+python-dotenv
+Werkzeug
+requests
+cohere
+psycopg2-binary

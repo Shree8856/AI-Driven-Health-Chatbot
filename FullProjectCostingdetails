@@ -1,0 +1,145 @@
+ Health Chatbot – Full Project Code + Costing
+
+---
+
+## 📌 Project Description
+
+Create a multilingual AI chatbot to educate rural and semi-urban populations about preventive healthcare, disease symptoms, and vaccination schedules. The chatbot integrates with government health databases and provides real-time alerts for outbreaks.
+
+**Expected Outcome:**
+
+* A chatbot accessible via WhatsApp or SMS.
+* 80% accuracy in answering health queries.
+* 20% increase in awareness in target communities.
+
+**Technical Feasibility:**
+
+* NLP frameworks: Rasa, Cohere.
+* APIs: Govt. Health data, Cohere API.
+* Deployable on AWS/Azure cloud for scalability.
+
+---
+
+## 🛠️ Features
+
+1. Health Query Answering (Rasa model).
+2. Vaccination schedule reminders.
+3. Multilingual support (HuggingFace/Cohere models).
+4. Connected with government health data.
+5. Authentication with PostgreSQL.
+
+---
+
+## 👨‍💻 Team Roles
+
+* **Project Manager:** Yash
+* **AI/ML Engineer:** Tanmay Khedekar
+* **Backend:** Shree Madke
+* **Frontend:** Vedant Patil
+* **QA:** Udayraj Gadekar
+
+---
+
+## 🏗️ Architecture
+
+\[React Vite + Tailwind + TypeScript Frontend] → \[Flask Backend API + Cohere] → \[Database (Postgres)]
+
+Supporting services:
+
+* AI/NLP Models (Rasa / LLM API).
+* Govt. Health APIs / Outbreak data.
+
+---
+
+## ⚙️ Technical Stack
+
+* **Model:** Rasa, Cohere, Python Flask.
+* **Frontend:** BoltAI, React.js.
+* **Backend:** Python Flask, PostgreSQL/MySQL.
+* **Cloud:** AWS / Azure.
+* **APIs:** Cohere API, Govt. Health APIs.
+
+---
+
+## 💻 Code Structure (Scaffold)
+
+```
+project/
+├── backend/
+│   ├── app.py            # Flask entrypoint
+│   ├── routes/
+│   │   ├── health.py     # Health queries
+│   │   ├── auth.py       # Authentication
+│   │   └── vaccine.py    # Vaccination schedules
+│   ├── services/
+│   │   ├── rasa_client.py
+│   │   ├── cohere_client.py
+│   │   └── gov_api.py
+│   ├── models/
+│   │   └── user.py
+│   └── db.py             # Postgres connection
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── components/
+│   │   │   └── ChatWidget.tsx
+│   │   └── styles/
+│   └── vite.config.ts
+│
+├── rasa/
+│   ├── domain.yml
+│   ├── nlu.yml
+│   ├── stories.yml
+│   └── config.yml
+│
+├── docker-compose.yml
+├── Dockerfile.backend
+├── Dockerfile.frontend
+└── README.md
+```
+
+---
+
+## 💰 Estimated Costs
+
+### 🔹 Cloud Infrastructure (Recurring Monthly)
+
+| Service                     | Platform                     | Cost/Month (₹)   | Notes                    |
+| --------------------------- | ---------------------------- | ---------------- | ------------------------ |
+| Compute (EC2 / Azure VM)    | AWS/Azure                    | 6,000            | For Rasa + Flask         |
+| Database (Postgres RDS)     | AWS/Azure                    | 3,000            | 20GB storage             |
+| Object Storage (S3/Blob)    | AWS/Azure                    | 500              | Model + logs             |
+| Load Balancer + API Gateway | AWS/Azure                    | 2,500            | Scalable traffic routing |
+| SMS/WhatsApp Integration    | Twilio/360Dialog             | 7,000            | Pay per conversation     |
+| Backup & Monitoring         | AWS CloudWatch/Azure Monitor | 1,500            | Logging, alerts          |
+| **Total (Monthly Infra)**   |                              | 20,500 (\~\$250) |                          |
+
+---
+
+### 🔹 API & Software Costs (Recurring Monthly)
+
+| Item                     | Cost             | Notes                             |
+| ------------------------ | ---------------- | --------------------------------- |
+| Cohere API               | \$100 (\~₹8,300) | 1M tokens (starter tier)          |
+| HuggingFace Hub          | Free–\$50        | Optional for multilingual hosting |
+| SMS Gateway (India)      | ₹0.20 per SMS    | Scale with outreach               |
+| **Total (API/Software)** | \~₹10,000        |                                   |
+
+---
+
+### 🔹 Development Costs (One-Time)
+
+| Resource        | Hours | Rate (₹/hr) | Cost (₹) |
+| --------------- | ----- | ----------- | -------- |
+| Project Manager | 80    | 700         | 56,000   |
+| AI/ML Engineer  | 150   | 800         | 1,20,000 |
+| Backend Dev     | 120   | 700         | 84,000   |
+| Frontend Dev    | 120   | 700         | 84,000   |
+| QA Engineer     | 80    | 600         | 48,000   |
+| **Total**       | 550   |             | 3,92,000 |
+
+---
+
+
+✅ This file contains **full project scaffold + costing** → ready to use for funding proposals.

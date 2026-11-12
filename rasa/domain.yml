@@ -1,0 +1,15 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_health
+
+responses:
+  utter_greet:
+    - text: "Hello! I am your healthcare assistant. How can I help you today?"
+  utter_goodbye:
+    - text: "Stay healthy! Goodbye 👋"
+
+actions:
+  - action_health_query

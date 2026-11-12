@@ -1,0 +1,6 @@
+rasa
+rasa-sdk
+cohere
+transformers
+torch
+requests
